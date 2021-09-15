@@ -11,7 +11,16 @@
     </q-header>
 
     <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
-      <q-icon name="style" size="lg" color="primary" />
+      <q-icon class="q-pa-md" name="style" size="lg" color="primary" />
+      <q-list bordered>
+        <q-item clickable v-ripple>
+          <q-item-section avatar>
+            <q-icon color="primary" name="bluetooth" />
+          </q-item-section>
+
+          <q-item-section>Icon as avatar</q-item-section>
+        </q-item>
+      </q-list>
     </q-drawer>
 
     <q-drawer show-if-above v-model="rightDrawerOpen" side="right" bordered>
