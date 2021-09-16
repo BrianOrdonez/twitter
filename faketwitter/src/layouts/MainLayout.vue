@@ -4,7 +4,7 @@
       <q-toolbar>
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
-        <q-toolbar-title class="text-weight-bold">
+        <q-toolbar-title class="text-h6 text-weight-bold">
           Fake Twitter
         </q-toolbar-title>
       </q-toolbar>
@@ -13,12 +13,12 @@
     <q-drawer show-if-above v-model="leftDrawerOpen" side="left" bordered>
       <q-icon class="q-pa-md" name="style" size="lg" color="primary" />
       <q-list bordered>
-        <q-item clickable v-ripple>
+        <q-item to="/" clickable v-ripple>
           <q-item-section avatar>
-            <q-icon color="primary" name="bluetooth" />
+            <q-icon color="primary" name="home" />
           </q-item-section>
 
-          <q-item-section>Icon as avatar</q-item-section>
+          <q-item-section class="text-h6 text-weight-bold">Home</q-item-section>
         </q-item>
       </q-list>
     </q-drawer>
