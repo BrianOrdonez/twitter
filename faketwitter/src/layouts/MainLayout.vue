@@ -5,7 +5,13 @@
         <q-btn dense flat round icon="menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title class="text-h6 text-weight-bold">
-          Fake Twitter
+          <span class="gt-sm"> Fake Twitter </span>
+          <q-icon
+            class="q-pa-md lt-md"
+            name="style"
+            size="lg"
+            color="primary"
+          />
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -19,14 +25,14 @@
     >
       <q-icon class="q-pa-md" name="style" size="lg" color="primary" />
       <q-list bordered>
-        <q-item to="/" clickable v-ripple>
+        <q-item to="/" clickable v-ripple exact>
           <q-item-section avatar>
             <q-icon name="home" />
           </q-item-section>
 
           <q-item-section class="text-h6 text-weight-bold">Home</q-item-section>
         </q-item>
-        <q-item to="/about" clickable v-ripple>
+        <q-item to="/about" clickable v-ripple exact>
           <q-item-section avatar>
             <q-icon name="help" />
           </q-item-section>
